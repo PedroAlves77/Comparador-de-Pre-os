@@ -22,7 +22,7 @@ function displayItems(products) {
             <img src="${product.thumbnail.replace(/\w\.jpg/gi, 'W.jpg')}" alt="${product.tittle}">
             <h3>${product.title}</h3>
             <p class="product-price">${product.price.toLocaleString('pt-br', { style: "currency", currency: "BRL" })}</p>
-            <p class="product-store">Loja: ${product.seller.nickname}</p>
+            <button class="buy"><a href="${product.permalink}">Compre Já</a></button>
         </div>
     `).join('')
 }
